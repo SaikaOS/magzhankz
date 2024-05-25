@@ -1,5 +1,5 @@
 import { getNews } from '@/api/getNews'
-import MyNews from '@/components/News/MyNews'
+import MyNews, { funcRandom, navbar } from '@/components/News/MyNews'
 import { News } from '@/utils/types'
 import React from 'react'
 
@@ -9,6 +9,7 @@ const OtherNews = async() => {
 
     data.forEach((item, index) => {
       item.id = index + 1
+      item.tag = navbar[funcRandom(navbar)]
   })
     
   return (
