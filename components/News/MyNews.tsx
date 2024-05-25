@@ -1,9 +1,19 @@
-import { colors, funcRandom } from '@/utils/global-funcs'
 import { News } from '@/utils/types'
 import Link from 'next/link'
 import React from 'react'
 
+export const colors = ["bg-[#4B68A1]", "bg-[#479CFF]", "bg-[#FF6D6D]", "bg-[#1EBD71]", 
+                      "bg-[#B957D2]", "bg-[#FFB72C]", "bg-[#AA2424]", "bg-[#4B47E2]"]
+
+export const navbar = ["Ақпарат", "Әдебиет", "Өнер", "Ғылым", 
+                        "Эксклюзив", "Карьера", "Спорт", "Тарих"]
+
+export const funcRandom = (arr: string[]) => {
+    return Math.floor(Math.random() * arr.length)
+}
+
 const MyNews = ({item, index, isRowsThree}: {item: News, index: number, isRowsThree: boolean}) => {
+    console.log(colors[1])
   return (
     <Link
     href={`/news/${item.id}`} key={index}

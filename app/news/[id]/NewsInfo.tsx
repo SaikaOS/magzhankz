@@ -1,5 +1,4 @@
-import { navbar } from '@/components/layout/Header'
-import { colors, funcRandom } from '@/utils/global-funcs'
+import { colors, funcRandom, navbar } from '@/components/News/MyNews'
 import { News } from '@/utils/types'
 import React from 'react'
 

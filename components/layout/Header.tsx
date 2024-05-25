@@ -2,11 +2,10 @@ import React from 'react'
 import Image from 'next/image'
 import { Bad_Script } from 'next/font/google'
 import { Chau_Philomene_One } from 'next/font/google'
+import { navbar } from '../News/MyNews'
 
 const badScript = Bad_Script({ subsets: ['latin'], weight: '400' })
 const chauPhilomeneOne = Chau_Philomene_One({ subsets: ['latin'], weight: '400' })
-
-export const navbar = ["Ақпарат", "Әдебиет", "Өнер", "Ғылым", "Эксклюзив", "Карьера", "Спорт", "Тарих"]
 
 const Header = () => {
   return (

@@ -1,5 +1,5 @@
 import React from 'react'
-import { navbar } from './Header'
+import { navbar } from '../News/MyNews'
 
 const Footer = () => {
   return (

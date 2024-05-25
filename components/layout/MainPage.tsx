@@ -1,9 +1,7 @@
 import React from 'react'
 import Pagination from '../UI/Pagination'
 import { getNews } from '@/api/getNews'
-import { navbar } from './Header'
-import MyNews from '../News/MyNews'
-import { funcRandom } from '@/utils/global-funcs'
+import MyNews, { funcRandom, navbar } from '../News/MyNews'
 import { News } from '@/utils/types'
 
 interface Params {
