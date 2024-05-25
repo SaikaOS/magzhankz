@@ -1,4 +1,4 @@
-import { API_KEY } from "@/components/MainPage"
+import { API_KEY } from "@/utils/global-funcs"
 
 export const getNews = async () => {
     const res = await fetch(`https://newsapi.org/v2/top-headlines?country=us&apiKey=${API_KEY}`)

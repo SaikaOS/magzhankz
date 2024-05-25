@@ -1,6 +1,6 @@
 import React from 'react'
-import { CommentType } from './CommentPage'
 import Image from 'next/image'
+import { CommentType } from '@/utils/types'
 
 const SingleComment = ({body, email}: CommentType) => {
   return (

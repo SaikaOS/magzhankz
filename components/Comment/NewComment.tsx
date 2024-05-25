@@ -34,7 +34,6 @@ const NewComment = () => {
 
   return (
     <div className=' flex flex-col justify-between'>
-      <div>
         {arr.map((item, index) => (
           <div className='flex justify-between w-[600px]'>
       <Image src={"/icons/comment_user_icon.svg"} width={64} height={64} alt="user icon" className='mb-auto mr-auto'/>
@@ -56,7 +55,6 @@ const NewComment = () => {
       </div>
   </div>
         ))}
-      </div>
       <div className='flex flex-col justify-between h-[180px] mt-4'>
         <textarea
           value={comment}

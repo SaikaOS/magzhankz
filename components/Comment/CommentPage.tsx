@@ -2,12 +2,7 @@ import { getComments } from '@/api/getNews'
 import React from 'react'
 import SingleComment from './SingleComment'
 import NewComment from './NewComment'
-
-export interface CommentType {
-  id?: number
-  email: string
-  body: string
-}
+import { CommentType } from '@/utils/types'
 
 const CommentPage = async ({params}: {params: {id: string}}) => {
   const data:CommentType[] = await getComments(params.id)
